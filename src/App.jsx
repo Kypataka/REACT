@@ -29,7 +29,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 	  <p className="read-the-docs">
-		{new Date().getFullYear()} This DZ №1, All rights are violated
+		{new Date().getFullYear()}. All rights are violated
 	  </p>
     </>
   )
