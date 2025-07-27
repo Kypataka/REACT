@@ -1,11 +1,15 @@
+import { useState } from 'react'
 
+export const CurrentDate = () => {
+	const [currentDate, setCurrentDate] = useState(new Date())
 
-function CurrentYear(){
-	const data = new Date()
+	setTimeout(() => {
+		setCurrentDate(new Date())
+	}, 1000)
 
 	return (
-		data.getFullYear()
+		<div>
+			{currentDate.toISOString().substring(11, 19)}
+		</div>
 	)
 }
-
-export default CurrentYear

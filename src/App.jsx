@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import CurrentYear from './AddDate.jsx'
+import { CurrentDate } from './AddDate.jsx'
+import { Test } from './TestComponent.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,8 +31,11 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 	  <p className="read-the-docs">
-		<CurrentYear /> . All rights are violated!!!!!
+		All rights are violated!!!!!
 	  </p>
+	  <Test />
+	  <CurrentDate />
+
     </>
   )
 }
